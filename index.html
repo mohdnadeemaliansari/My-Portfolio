@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Portfolio.css">
+    
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold text-indigo-600">Nadeem's Portfolio</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600 transition">Home</a>
+                <a href="#skills" class="nav-link text-gray-700 hover:text-indigo-600 transition">Skills</a>
+                <a href="#projects" class="nav-link text-gray-700 hover:text-indigo-600 transition">Projects</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-indigo-600 transition">About</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" aria-label="Open mobile menu" title="Open mobile menu">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+                    Hi, I'm <span class="text-indigo-600">Mohd Nadeem Ali Ansrai</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600">
+                    Batchelor Of Computer Application's Student <br>
+                    <span class="text-indigo-500">& Aspiring Full-Stack Developer</span>
+                </h2>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Passionate about creating clean, functional, and beautiful web experiences. Currently mastering the art of coding while building projects that solve real-world problems.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">View My Work's</a>
+                    <a href="#contact" class="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-50 transition">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e2d0504a-cbfa-4400-be38-f85dc3cb6693.png" alt="Illustration of a young developer working on a laptop with code visible on screen in a light-filled modern workspace" class="rounded-full floating w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Here are the technologies I've been working with through my academic journey and personal projects.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1b8da36d-4347-47a6-9ae5-bf78d963438e.png" alt="HTML5 logo with vibrant orange color" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">HTML5</h3>
+                    <p class="text-gray-600">Semantic markup, accessibility standards</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/47233bca-df6d-472d-a958-e6bc47c07675.png" alt="CSS3 logo in bright blue color with artistic shapes" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">CSS3</h3>
+                    <p class="text-gray-600">Flexbox, Grid, Animations</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e4a7836a-1bc0-4be8-94f7-74f784648c2f.png" alt="JavaScript logo with bright yellow color and square shape" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+                    <p class="text-gray-600">ES6+, DOM manipulation, APIs</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/988b3857-d4a3-40e8-aab0-71ae5fd64ccc.png" alt="React logo with atom-like blue symbol on dark background" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">React</h3>
+                    <p class="text-gray-600">Components, Hooks, Context</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/44267fbc-7fda-4308-a333-2c02e0b7ce7b.png" alt="Node.js logo in green color with hexagon shape" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Node.js</h3>
+                    <p class="text-gray-600">Express, REST APIs</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b3fbadcc-15e3-4bc1-86c2-89b964572d1e.png" alt="Git version control logo with orange and white color branches" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Git</h3>
+                    <p class="text-gray-600">Version control, GitHub</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9898e078-e1ce-4211-b092-095f3874c15d.png" alt="Tailwind CSS logo showing blue gradient with stylized wind effect" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Tailwind</h3>
+                    <p class="text-gray-600">Utility-first CSS</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5477c70d-5347-4c1e-ab24-05d8519d1f5e.png" alt="MongoDB logo with green leaf symbol on dark background" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">MongoDB</h3>
+                    <p class="text-gray-600">NoSQL Database</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c3fc8ac-f020-4b26-ae5e-4c531573a3aa.png" alt="Figma design tool logo with gradient purple to pink colors" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Figma</h3>
+                    <p class="text-gray-600">UI/UX Design</p>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e70e2268-9caf-435c-b8f9-9ed707bbfe6c.png" alt="Python programming language logo showing blue and yellow snake emblem" class="w-20 h-20 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Python</h3>
+                    <p class="text-gray-600">Scripting, Data Structures</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Skills Section -->
+    <section id="other-skills" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Other Skills</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Additional tools and technologies I am familiar with.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- C -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">C</h3>
+                    <p class="text-gray-600">Procedural Programming</p>
+                </div>
+                <!-- C++ -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">C++</h3>
+                    <p class="text-gray-600">OOP, STL</p>
+                </div>
+                <!-- Java Core -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Java Core</h3>
+                    <p class="text-gray-600">OOP, Collections</p>
+                </div>
+                <!-- ChatGPT -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">ChatGPT</h3>
+                    <p class="text-gray-600">AI Assistance</p>
+                </div>
+                <!-- Blackbox AI -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://avatars.githubusercontent.com/u/102296027?s=200&v=4" alt="Blackbox AI logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Blackbox AI</h3>
+                    <p class="text-gray-600">AI Code Search</p>
+                </div>
+                <!-- VS Code -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">VS Code</h3>
+                    <p class="text-gray-600">Code Editor</p>
+                </div>
+                <!-- Microsoft Copilot -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://github.githubassets.com/images/modules/site/copilot/copilot-icon.svg" alt="Microsoft Copilot logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Microsoft Copilot</h3>
+                    <p class="text-gray-600">AI Coding Assistant</p>
+                </div>
+                <!-- GitHub -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" class="w-16 h-16 mx-auto mb-4 object-contain bg-white rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+                    <p class="text-gray-600">Collaboration & Hosting</p>
+                </div>
+                <!-- SQL -->        
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">SQL</h3>
+                    <p class="text-gray-600">Database Queries & Management</p>
+                </div>
+                <!-- Microsoft Office -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg" alt="Microsoft Office logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Microsoft Office</h3>
+                    <p class="text-gray-600">Word, Excel, PowerPoint</p>
+                </div>
+                <!-- IBM Cloud -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Cloud logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">IBM Cloud</h3>
+                    <p class="text-gray-600">Cloud Services & Deployment</p>
+                </div>
+                <!-- Chat Bots -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chat Bot logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">Chat Bots</h3>
+                    <p class="text-gray-600">Conversational AI, Automation</p>
+                </div>
+                <!-- AI/ML -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="AI/ML logo" class="w-16 h-16 mx-auto mb-4 object-contain">
+                    <h3 class="text-xl font-semibold mb-2">AI / ML</h3>
+                    <p class="text-gray-600">Machine Learning, AI Concepts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A selection of projects I've built during my studies and personal time.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="project-image h-48 overflow-hidden">
+                        <img src="/To-Do-list-small-01.png" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcodingartistweb.com%2F2021%2F02%2Fsimple-to-do-list-javscript-javascript-project%2F&psig=AOvVaw3o_X9BtTEC_TGZ76jx0sAK&ust=1754752757296000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCHqMvB-44DFQAAAAAdAAAAABAE" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">TODO List</h3>
+                        <p class="text-gray-600 mb-4">Html , Css , Javascript DOM's for creating a simple todo list application</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Html</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Css</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Javascript</span>
+                        </div>
+                        <a href="https://github.com/mohdnadeemaliansari/Mini-Project-s/blob/main/todo.html" class="text-indigo-600 font-medium inline-flex items-center">View Project 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project Card -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="project-image h-48 overflow-hidden">
+                        <img src="/python.jpg" alt="Password Generator using python." class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Password Generator</h3>
+                        <p class="text-gray-600 mb-4">A simple password generator application using Python.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Tkinter</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Random</span>
+                        </div>
+                        <a href="https://github.com/mohdnadeemaliansari/CODSOFT/blob/main/password%20generator" class="text-indigo-600 font-medium inline-flex items-center">View Project 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project Card -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="project-image h-48 overflow-hidden">
+                        <img src="/Screenshot 2025-08-02 000616.png" alt="Power System Fault Detection & Classification" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Power System Fault Detection & Classification</h3>
+                        <p class="text-gray-600 mb-4">I developed a model that detects and classifies different types of power distribution faults (Line-to-Ground, Line-to-Line, Three-Phase).</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">IBM Cloud</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">IBM Watson.ai</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Jupyter Notebook</span>
+                        </div>
+                        <a href="https://github.com/mohdnadeemaliansari/IBM-Cloud-Project" class="text-indigo-600 font-medium inline-flex items-center">View Project 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Education Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate web development student currently pursuing "Batchelor of Computer Application's" at "M.L.K P.G COLLEGE, BALRAMPUR UP". My journey into coding began when I built my first basic website in 1st year, and I've been hooked ever since.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        What excites me most about programming is the creative problem solving and the ability to build things that can make people's lives better. I enjoy both the logical structure of back-end development and the visual creativity of front-end work.
+                    </p>
+                    <p class="text-gray-600">
+                        When I'm not coding, you can find me hiking local trails, reading sci-fi novels, or experimenting with new recipes in the kitchen.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Education & Experience</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg text-gray-800">BCA - Bachelor of Computer Applications</h4>
+                            <p class="text-indigo-600 mb-2">M.L.K P.G COLLEGE BALRAMPUR , 2023 - Present</p>
+                            <p class="text-gray-600">Specializing in Web Technologies and AI/ML engineering</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg text-gray-800">MERN Stack Developer Intern</h4>
+                            <p class="text-indigo-600 mb-2">CODEC Technologies., Summer 2025</p>
+                            <p class="text-gray-600">Assisted in building responsive UIs for client projects using React and Tailwind CSS</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg text-gray-800">AI & Cloud Intern</h4>
+                            <p class="text-indigo-600 mb-2">IBM SkillsBuild Colab with Edunet Foundation. , Summer 2025</p>
+                            <p class="text-gray-600">In this project, I developed a machine learning model to detect and classify different types of faults in an electrical power distribution system. Using electrical measurement data such as voltage and current phasors, the model distinguishes between normal operating conditions and fault conditions like:
+                                <ul class="list-disc list-inside">
+                                    <li>Line-to-Ground faults</li>
+                                    <li>Line-to-Line faults</li>
+                                    <li>Three-Phase faults</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+            </div>
+            <div class="max-w-3xl mx-auto mb-10">
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="mailto:mohdnadeemaliansari@gmail.com" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition" target="_blank" rel="noopener">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <span>Email</span>
+            </a>
+            <a href="Tel:+919984017532" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition" target="_blank" rel="noopener">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <span>Call</span>
+            </a>
+            <a href="https://github.com/mohdnadeemaliansari" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition" target="_blank" rel="noopener">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.48 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.853 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mohd-nadeem-ali-ansari-b245b331b" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition" target="_blank" rel="noopener">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/_the.14th.alphabet_/" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition" target="_blank" rel="noopener">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6.405-6.405c-.35-.35-.92-.35-1.27 0-.35.35-.35.92 0 1.27.35.35.92.35 1.27 0 .35-.35.35-.92 0-1.27z"/></svg>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </div>
+            <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- 
+        The contact form in your HTML does not actually send data anywhere; it just shows an alert and resets the form.
+        To access the submitted information, you need to either:
+        1. Send the form data to a backend server (using fetch/AJAX or a form action).
+        2. Or, handle it in JavaScript (for demo/testing).
+
+        Example: Log the form data in the browser console on submit.
+    -->
+    <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = this.name.value;
+            const email = this.email.value;
+            const message = this.message.value;
+            // You can send this data to a server here using fetch/AJAX
+            console.log({ name, email, message });
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+    });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-8">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-4 md:mb-0 text-center md:text-left">
+                <span class="font-bold text-lg text-indigo-400">Nadeem's Portfolio</span>
+                <span class="mx-2">|</span>
+                <span class="text-sm">&copy; 2025 Mohd Nadeem Ali Ansari.   All rights reserved.</span>
+            </div>
+            <div class="flex space-x-5 justify-center">
+                <a href="https://github.com/mohdnadeemaliansari" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-indigo-400 transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.217.682-.48 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.853 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mohd-nadeem-ali-ansari-b245b331b" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-indigo-400 transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/_the.14th.alphabet_" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-indigo-400 transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6.405-6.405c-.35-.35-.92-.35-1.27 0-.35.35-.35.92 0 1.27.35.35.92.35 1.27 0 .35-.35.35-.92 0-1.27z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-20 hidden">
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex justify-end mb-8">
+                <button id="close-menu" class="text-gray-700 focus:outline-none" aria-label="Close menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="flex flex-col space-y-6 text-center">
+                <a href="#home" class="text-2xl font-medium text-gray-800 hover:text-indigo-600 transition">Home</a>
+                <a href="#skills" class="text-2xl font-medium text-gray-800 hover:text-indigo-600 transition">Skills</a>
+                <a href="#projects" class="text-2xl font-medium text-gray-800 hover:text-indigo-600 transition">Projects</a>
+                <a href="#about" class="text-2xl font-medium text-gray-800 hover:text-indigo-600 transition">About</a>
+                <a href="#contact" class="text-2xl font-medium text-gray-800 hover:text-indigo-600 transition">Contact</a>
+            </nav>
+        </div>
+    </div>
+    <script src="Postfolio.js"></script>
+
+    <!-- <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    </script> -->
+</body>
+</html>
+
